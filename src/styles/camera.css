@@ -1,0 +1,16 @@
+.react-html5-camera-photo > img, .react-html5-camera-photo > video {
+    width: 75%;
+    margin-top: 20%;
+    border-radius: 20px;
+   
+}
+
+@media only screen and (max-width: 425px){
+	.react-html5-camera-photo > img, .react-html5-camera-photo > video{
+    
+    width: 96%;
+    margin-top: 0%;
+  }
+}
+
+    

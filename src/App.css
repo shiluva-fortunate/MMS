@@ -1,38 +1,103 @@
-.App {
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.btn-home{
+  width: 25%;
+  position: absolute;
+  text-align: end;
+  padding: 20px 0;
+  z-index: 50;
+  right: 3%;
+}
+
+.btn-upload{
+  width: 25%;
+  position: absolute;
+  text-align: end;
+  padding: 20px 0;
+  z-index: 50;
+  right: 15%;
+}
+
+.pop-up-conatiner{
+  width: 52%;
+  height: 70vh;
+  transform: translate(17%, 37%);
+  border: 3px solid white;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.pop-up-btn-holder{
+  width: 60%;
+  margin-top: 17%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  transform: translate(33%, 35%);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 425px){
+	.Landing{
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .pop-up-conatiner{
+    width: 95%;
+    height: 35vh;
+    position: absolute;
+    display: block;
+    top: 0;
+    transform: translate(0);
+    margin: auto 2%;
   }
+
+  .pop-up-btn-holder{
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(0%);
+  }
+
+  .btn-home{
+    width: unset;
+    position: absolute;
+    text-align: end;
+    padding: 20px 0;
+    z-index: 50;
+    right: 15%;
+    top: 2%;
+  }
+
+  .btn-upload{
+    width: unset;
+    position: absolute;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 50;
+    right: 55%;
+    top: 2%;
+  }
+
+  .btn-manipulate{
+    width: 110px !important;
+    font-size: 16px !important;
+  }
+  
 }
